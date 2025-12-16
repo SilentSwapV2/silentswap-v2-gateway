@@ -1,0 +1,25 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "test": "hardhat test --network localhost",
+    "anvil": "anvil --fork-url https://winter-nameless-surf.avalanche-mainnet.quiknode.pro/59d54d4b83077a8340587766212a5c641e94dd61/ext/bc/C/rpc/ --chain-id 43114 --block-gas-limit 1000000000",
+    "deploy-local": "npx hardhat run test/deploy.js --network localhost",
+    "deploy-fuji": "npx hardhat run test/deploy.js --network fujit"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.19",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
+    "@openzeppelin/contracts": "^5.2.0",
+    "@types/chai": "4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.11",
+    "chai": "4",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "hardhat-contract-sizer": "^2.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
